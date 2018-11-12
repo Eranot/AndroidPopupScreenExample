@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--AQUI TÁ SUA RECYCLERVIEW, NÃO TEM NADA, MAS COLOQUEI-->
+    <!--ELA EM CINZA PRA TU SABER QUE ELA ESTÁ AQUI-->
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_show"
+        android:background="#999999">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <!--BOTÃO PRA FAZER ELA APARECER E DESAPARECER-->
+    <!--O CÓDIGO QUE FAZ ISSO TÁ NO MAINACTIVITY-->
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Mostrar/Esconder"
+        />
+
+    <!--ISSO PODE SER O SEU FRAGMENT, SÓ USEI UMA VIEW PRA ILUSTRAR-->
+    <View
+        android:id="@+id/minha_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="32dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_show"/>
+
+</android.support.constraint.ConstraintLayout>
